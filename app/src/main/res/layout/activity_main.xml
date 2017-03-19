@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.csulb.android.arttherapy.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/new_button"
+            android:src="@drawable/create_new"
+            android:onClick="onToolButtonClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/brush_button"
+            android:src="@drawable/brush"
+            android:onClick="onToolButtonClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/eraser_button"
+            android:src="@drawable/eraser"
+            android:onClick="onToolButtonClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <edu.csulb.android.arttherapy.CanvasView
+        android:id="@+id/canvas"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>
